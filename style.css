@@ -1,0 +1,326 @@
+/* RESET & FONTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+
+.nav-actions a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 775px;
+    display: flex;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 40px; /* Abstand vom unteren Rand */
+    left: 40px;   /* Abstand vom linken Rand */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    z-index: 2;
+}
+
+/* HERO VIDEO */
+.hero-video {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover füllt den gesamten Bereich aus */
+    z-index: -1; /* Video hinter den Text legen */
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* PRODUKTE */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+/* BILDER */
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+
+/* TEXT AUF DEM BILD */
+.product-info {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    color: white;
+    z-index: 2;
+}
+
+.product-info h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: rgba(255,255,255,0.8);
+    color: #000;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+    font-size: 1.8rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Menüband (versteckt standardmässig) */
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 1.2rem;
+    transition: background 0.2s;
+}
+
+.menu a:hover {
+    background-color: #000000;
+}
+
+/* Menü sichtbar machen */
+.menu.active {
+    display: flex;
+}
+
+/* Login/Anmelden */ 
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 0px);
+    background: #000000;
+    color: white;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    margin-top: 2rem;
+}
+
+.login input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #ddd;
+}
+
+/* FOOTER GENERAL STYLE */
+.footer {
+    background: #ffffff;
+    padding: 60px 0;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column; /* Icons oben, Links darunter */
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-socials a {
+    color: #000;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #555; /* leicht grau beim Hover */
+}
+
+.footer-links {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.footer-bottom {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-end; /* <-- gleiche Höhe */
+    justify-content: space-between;
+}
+
+.footer-left {
+    font-size: 13px;
+}
+
+.footer-middle {
+    display: flex;
+    gap: 35px;
+    font-size: 13px;
+}
+
+.footer-middle a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-right {
+    width: 100px; /* Platzhalter, damit die Mitte wirklich zentriert ist */
+}
+
+

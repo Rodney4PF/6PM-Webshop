@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="product Jacket Red.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Rodney</a>
+            <div class="nav-links">
+                <a href="Basics.html">Basics</a>
+                <a href="Jackets.html">Jackets</a>
+            </div>
+            <div class="nav-actions">
+                <a href="login.html">Anmelden</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-page">
+
+        <div class="product-wrapper">
+
+            <!-- LINKES BILD -->
+            <div class="product-images">
+                <img src="6PM Jacket Red.webp" class="main-image" alt="Produkt Bild">
+
+                <div class="image-row">
+                    <img src="6PM Jacket Red.webp" class="thumb active">
+                    <img src="6PM Jacket Red 2.webp" class="thumb">
+                </div>
+            </div>
+
+            <!-- RECHTE PRODUKTINFO -->
+            <div class="product-info">
+
+                <h1 class="product-title">Jacket Red</h1>
+                <p class="product-price">CHF 169.00</p>
+
+            
+
+                <!-- GRÖSSEN -->
+                <div class="sizes">
+                    <div class="size-options">
+                        <span class="size">XS</span>
+                        <span class="size">S</span>
+                        <span class="size">M</span>
+                        <span class="size">L</span>
+                        <span class="size">XL</span>
+                    </div>
+                </div>
+
+                <!-- BUTTON -->
+                <button class="add-to-cart">SOLD OUT </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+<footer class="footer">
+  <div class="footer-bottom">
+    
+    <!-- LINKS: Rodney -->
+    <p class="footer-left">© Rodney 2025</p>
+
+   <!-- MITTE: Social Icons + Links -->
+    <div class="footer-middle">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/6pmseason/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.tiktok.com/@6pmseason" target="_blank"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a href="https://www.whatsapp.com/channel/0029Va6YGBxADTOHDfv8Zd3r" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+
+     <div class="footer-links">
+        <a href="Versandkondition.html">Versandkonditionen</a>
+        <a href="AGB.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="Jobs.html">Jobs</a>
+      </div>
+    </div>
+
+    <!-- RECHTS: leer, dient als Ausgleich -->
+    <div class="footer-right"></div>
+  </div>
+</footer>
+
+
+
+
+<script>
+    // Bilder austauschen 
+    const mainImage = document.querySelector(".main-image");
+    const thumbs = document.querySelectorAll(".thumb");
+
+    thumbs.forEach(t => {
+        t.addEventListener("click", () => {
+            mainImage.src = t.src;
+            document.querySelector(".thumb.active").classList.remove("active");
+            t.classList.add("active");
+        });
+    });
+</script>
+
+</body>
+</html>

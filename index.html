@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodney Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">Rodney</a>
+
+            <!-- Rechts -->
+            <div class="nav-actions">
+                <a href="login.html">Anmelden</a>
+            </div>
+        </nav>
+
+        <!-- Menüband -->
+        <div class="menu" id="menu">
+            <a href="Basics.html">Basics</a>
+            <a href="Jackets.html">Jackets</a>
+            <a href="Versandkondition.html">Versandkondition</a>
+            <a href="AGB.html">AGB</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="Jobs.html">Jobs</a>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <video autoplay  muted loop class="hero-video">
+            <source src="6pm video 11.mp4" type="video/mp4">
+        </video>
+
+        <h1>6PM Family</h1>
+        <div class="search-bar"></div>
+         </section>
+
+        
+
+    <!-- PRODUKTE -->
+    <section class="products">
+        <div class="product-card">
+            <img src="Reezy&Achraf.jpg" alt="Basics">
+            <div class="product-info">
+                <h3>Basics</h3>
+                <a class="btn" href="Basics.html">Shop Now</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="6PM Jackets.jpg" alt="Jackets">
+            <div class="product-info">
+                <h3>Jackets</h3>
+                <a class="btn" href="Jackets.html">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+  <div class="footer-bottom">
+    
+    <!-- LINKS: Rodney -->
+    <p class="footer-left">© Rodney 2025</p>
+
+    <!-- MITTE: Social Icons + Links -->
+    <div class="footer-middle">
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/6pmseason/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.tiktok.com/@6pmseason" target="_blank"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a href="https://www.whatsapp.com/channel/0029Va6YGBxADTOHDfv8Zd3r" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+
+     <div class="footer-links">
+        <a href="Versandkondition.html">Versandkonditionen</a>
+        <a href="AGB.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="Jobs.html">Jobs</a>
+      </div>
+    </div>
+
+    <!-- RECHTS: leer, dient als Ausgleich -->
+    <div class="footer-right"></div>
+  </div>
+</footer>
+
+
+
+
+    <!-- SCRIPT -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
